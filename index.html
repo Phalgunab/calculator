@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body">
+  <h1 style="text-align: left; font-family: Arial, Helvetica, sans-serif;">Calculator</h1>
+  
+  <div class="main-div">
+  <p id="io_line" style="height: 50px; 
+  background-color:antiquewhite ; 
+  text-align: right; 
+  font-size: larger; 
+  margin: 10px;
+  border-radius: 5%;
+  "></p>
+  <table>
+    <tr>
+      <td><button class="cal-number" id="1" onclick="onNumberClick(this.id)">1</button></td>
+      <td><button class="cal-number" id="2" onclick="onNumberClick(this.id)">2</button></td>
+      <td><button class="cal-number" id="3" onclick="onNumberClick(this.id)">3</button></td>
+      <td><button class="cal-math-symbol" id="+" onclick="onNumberClick(this.id)">+</button></td>
+    </tr>
+    <tr>
+      <td><button class="cal-number" id="4" onclick="onNumberClick(this.id)">4</button></td>
+      <td><button class="cal-number" id="5" onclick="onNumberClick(this.id)">5</button></td>
+      <td><button class="cal-number" id="6" onclick="onNumberClick(this.id)">6</button></td>
+      <td><button class="cal-math-symbol" id="-" onclick="onNumberClick(this.id)">-</button></td>
+    </tr>
+    <tr>
+      <td><button class="cal-number" id="7" onclick="onNumberClick(this.id)">7</button></td>
+      <td><button class="cal-number" id="8" onclick="onNumberClick(this.id)">8</button></td>
+      <td><button class="cal-number" id="9" onclick="onNumberClick(this.id)">9</button></td>
+      <td><button class="cal-math-symbol" id="*" onclick="onNumberClick(this.id)">*</button></td>
+    </tr>
+    <tr>
+      <td><button class="cal-number" id="0" onclick="onNumberClick(this.id)">0</button></td>
+      <td><button class="cal-number" id="." onclick="onNumberClick(this.id)">.</button></td>
+      <td><button class="cal-number" id="=" onclick="onNumberClick(this.id)">=</button></td>
+      <td><button class="cal-math-symbol" id="/" onclick="onNumberClick(this.id)">/</button></td>
+    </tr>
+    <tr>
+      <td><button class="cal-number" onclick="clearData()">Clear</button></td>
+    </tr>
+  </table>
+  <p id="error" style="text-align: center; color: white;"></p>
+</div>
+</body>
+</html>
